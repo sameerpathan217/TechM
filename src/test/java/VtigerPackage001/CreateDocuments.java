@@ -21,7 +21,7 @@ public class CreateDocuments extends BaseClass{
 		
 		System.out.println("push the latest code to githhub");
 		System.out.println("Hi new branch");
-		System.out.println("Hih");
+		System.out.println("Hih123456789");
 
 	}
 
