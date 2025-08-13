@@ -18,6 +18,9 @@ public class CreateDocuments extends BaseClass{
 		DocumentsPOM dpm=new DocumentsPOM(driver);
 		Assert.assertEquals(false, true);
 		dpm.createDocument(driver);
+		
+		System.out.println("push the latest code to githhub");
+		System.out.println();
 	}
 
 }
