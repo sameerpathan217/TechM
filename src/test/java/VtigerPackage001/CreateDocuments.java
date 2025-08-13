@@ -20,8 +20,10 @@ public class CreateDocuments extends BaseClass{
 		dpm.createDocument(driver);
 		
 		System.out.println("push the latest code to githhub");
-		System.out.println("Hi new branch");
-		System.out.println("Hih123456789");
+		System.out.println("Hi newwwwwwwwwwww branch");
+		
+
+		
 
 	}
 
