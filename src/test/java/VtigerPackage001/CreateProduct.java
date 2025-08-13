@@ -16,6 +16,8 @@ public class CreateProduct extends BaseClass {
 	public void testProduct() throws EncryptedDocumentException, IOException {
 		ProductPOM pp=new ProductPOM(driver);	
 		pp.createProduct(driver);
+		
+		System.out.println("Sameer pathan");
 	}
 
 }
