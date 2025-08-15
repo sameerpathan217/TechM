@@ -16,6 +16,7 @@ public class CreateOrgnization extends BaseClass {
 	 
 	   OrgnizationPOM op=new OrgnizationPOM(driver);  
 	   op.addData(driver);
+		System.out.println("Sameer pathan: Great english speaker");
 	}
    
 }
