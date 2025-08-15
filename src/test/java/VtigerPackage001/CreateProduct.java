@@ -17,7 +17,7 @@ public class CreateProduct extends BaseClass {
 		ProductPOM pp=new ProductPOM(driver);	
 		pp.createProduct(driver);
 		
-		System.out.println("Sameer pathan");
+		
 
 		System.out.println("Sameer pathan:Unstoppable SDET Engineer");
 	}

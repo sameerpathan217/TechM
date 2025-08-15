@@ -19,9 +19,7 @@ public class CreateDocuments extends BaseClass{
 		Assert.assertEquals(false, true);
 		dpm.createDocument(driver);
 		
-		System.out.println("push the latest code to githhub");
-		System.out.println("Hi newwwwwwwwwwww branch");
-		System.out.println();
+		
 
 		System.out.println("Sammer pathan: Great team manager with lots of energy");
 		System.out.println("Sameer pathan billioniare");
