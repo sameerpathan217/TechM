@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test002(failed)">
-    <parameter name="Browser" value="chrome"/>
+  <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="VtigerPackage001.CreateOrgnization">
+      <class name="VtigerPackage001.CreateDocuments">
         <methods>
           <include name="connectToDB"/>
-          <include name="logintoApp"/>
           <include name="launchApplication"/>
           <include name="closeTheDB"/>
           <include name="closeApplication"/>
+          <include name="testDocument"/>
           <include name="logoutApplication"/>
           <include name="loginApplication"/>
         </methods>
-      </class> <!-- VtigerPackage001.CreateOrgnization -->
+      </class> <!-- VtigerPackage001.CreateDocuments -->
     </classes>
-  </test> <!-- Test002(failed) -->
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

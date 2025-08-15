@@ -16,7 +16,7 @@ public class CreateDocuments extends BaseClass{
 	@Test(retryAnalyzer=Generic_Utility.Retry_Analyzer.class)
 	public void testDocument() throws EncryptedDocumentException, IOException {
 		DocumentsPOM dpm=new DocumentsPOM(driver);
-		Assert.assertEquals(false, true);
+		//Assert.assertEquals(false, true);
 		dpm.createDocument(driver);
 		
 		
