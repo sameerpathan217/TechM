@@ -37,6 +37,18 @@
     <version>5.0.9</version>
 </dependency>
 
+<dependency>
+    <groupId>com.aventstack</groupId>
+    <artifactId>extentreports</artifactId>
+    <version>5.0.9</version>
+    <exclusions>
+        <exclusion>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </exclusion>
+    </exclusions>
+</dependency>
+
 </dependencies>
 
 </project>
