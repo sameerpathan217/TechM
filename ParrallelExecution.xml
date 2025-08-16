@@ -18,4 +18,10 @@
       <class name="VtigerPackage001.CreateOrgnization"/>
     </classes>
   </test>
+<test  name="Test4">
+    <classes>
+      <class name="VtigerPackage001.Create_DashBoard"/>
+    </classes>
+  </test>
+
 </suite> <!-- Suite -->

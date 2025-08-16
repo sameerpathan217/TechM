@@ -73,6 +73,7 @@ public class BaseClass {
 	@AfterClass(groups={"sanity","smoke"})
 	public void closeApplication() {
 		System.out.println("Browser closed");
+		driver.close();
 	}
 	
 	@AfterSuite(groups={"sanity","smoke"})

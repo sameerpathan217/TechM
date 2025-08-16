@@ -10,7 +10,7 @@ import POM.DashboardPOM;
 
 public class Create_DashBoard extends BaseClass {
 	
-	@Test(groups="sanity")
+	@Test(groups="smoke")
 	public void dashboardTest() throws EncryptedDocumentException, IOException {
 		
 		DashboardPOM dp=new DashboardPOM(driver);
