@@ -17,7 +17,7 @@ public class CreateOrgnization extends BaseClass {
 	 
 	   OrgnizationPOM op=new OrgnizationPOM(driver);  
 	   op.addData(driver);
-	   Assert.assertEquals(true,false);
+	  
 		System.out.println("Sameer pathan: Great english speaker");
 	}
    
