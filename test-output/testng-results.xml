@@ -1,46 +1,114 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="9" total="10" passed="1" failed="0" skipped="0">
+<testng-results ignored="6" total="10" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-16T13:32:00 IST" name="Suite" finished-at="2025-08-16T13:32:12 IST" duration-ms="11382">
+  <suite started-at="2025-08-16T17:03:17 IST" name="Suite" finished-at="2025-08-16T17:04:20 IST" duration-ms="63010">
     <groups>
+      <group name="smoke">
+        <method signature="CreateOrgnization.logintoApp()[pri:0, instance:VtigerPackage001.CreateOrgnization@6fd83fc1]" name="logintoApp" class="VtigerPackage001.CreateOrgnization"/>
+        <method signature="Create_DashBoard.dashboardTest()[pri:0, instance:VtigerPackage001.Create_DashBoard@306e95ec]" name="dashboardTest" class="VtigerPackage001.Create_DashBoard"/>
+      </group> <!-- smoke -->
       <group name="sanity">
-        <method signature="CreateProduct.testProduct()[pri:0, instance:VtigerPackage001.CreateProduct@bae7dc0]" name="testProduct" class="VtigerPackage001.CreateProduct"/>
+        <method signature="CreateProduct.testProduct()[pri:0, instance:VtigerPackage001.CreateProduct@52af26ee]" name="testProduct" class="VtigerPackage001.CreateProduct"/>
       </group> <!-- sanity -->
     </groups>
-    <test started-at="2025-08-16T13:32:00 IST" name="Test" finished-at="2025-08-16T13:32:12 IST" duration-ms="11382">
-      <class name="VtigerPackage001.CreateProduct">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:VtigerPackage001.CreateProduct@bae7dc0]" started-at="2025-08-16T13:32:00 IST" name="launchApplication" finished-at="2025-08-16T13:32:02 IST" duration-ms="1918" status="PASS">
+    <test started-at="2025-08-16T17:03:17 IST" name="Test" finished-at="2025-08-16T17:04:20 IST" duration-ms="63010">
+      <class name="VtigerPackage001.CreateOrgnization">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:VtigerPackage001.CreateOrgnization@6fd83fc1]" started-at="2025-08-16T17:04:04 IST" name="launchApplication" finished-at="2025-08-16T17:04:06 IST" duration-ms="1831" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method is-config="true" signature="loginApplication()[pri:0, instance:VtigerPackage001.CreateProduct@bae7dc0]" started-at="2025-08-16T13:32:02 IST" name="loginApplication" finished-at="2025-08-16T13:32:02 IST" duration-ms="248" status="PASS">
+        <test-method is-config="true" signature="loginApplication()[pri:0, instance:VtigerPackage001.CreateOrgnization@6fd83fc1]" started-at="2025-08-16T17:04:06 IST" name="loginApplication" finished-at="2025-08-16T17:04:06 IST" duration-ms="294" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginApplication -->
-        <test-method signature="testProduct()[pri:0, instance:VtigerPackage001.CreateProduct@bae7dc0]" started-at="2025-08-16T13:32:02 IST" name="testProduct" finished-at="2025-08-16T13:32:07 IST" duration-ms="4394" status="PASS">
+        <test-method signature="logintoApp()[pri:0, instance:VtigerPackage001.CreateOrgnization@6fd83fc1]" started-at="2025-08-16T17:04:06 IST" name="logintoApp" finished-at="2025-08-16T17:04:15 IST" duration-ms="8056" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testProduct -->
-        <test-method is-config="true" signature="logoutApplication()[pri:0, instance:VtigerPackage001.CreateProduct@bae7dc0]" started-at="2025-08-16T13:32:07 IST" name="logoutApplication" finished-at="2025-08-16T13:32:11 IST" duration-ms="4707" status="PASS">
+        </test-method> <!-- logintoApp -->
+        <test-method is-config="true" signature="logoutApplication()[pri:0, instance:VtigerPackage001.CreateOrgnization@6fd83fc1]" started-at="2025-08-16T17:04:15 IST" name="logoutApplication" finished-at="2025-08-16T17:04:20 IST" duration-ms="5184" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutApplication -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:VtigerPackage001.CreateProduct@bae7dc0]" started-at="2025-08-16T13:32:11 IST" name="closeApplication" finished-at="2025-08-16T13:32:12 IST" duration-ms="84" status="PASS">
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:VtigerPackage001.CreateOrgnization@6fd83fc1]" started-at="2025-08-16T17:04:20 IST" name="closeApplication" finished-at="2025-08-16T17:04:20 IST" duration-ms="552" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+      </class> <!-- VtigerPackage001.CreateOrgnization -->
+      <class name="VtigerPackage001.CreateProduct">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:VtigerPackage001.CreateProduct@52af26ee]" started-at="2025-08-16T17:03:49 IST" name="launchApplication" finished-at="2025-08-16T17:03:50 IST" duration-ms="1824" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method is-config="true" signature="loginApplication()[pri:0, instance:VtigerPackage001.CreateProduct@52af26ee]" started-at="2025-08-16T17:03:50 IST" name="loginApplication" finished-at="2025-08-16T17:03:51 IST" duration-ms="293" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginApplication -->
+        <test-method signature="testProduct()[pri:0, instance:VtigerPackage001.CreateProduct@52af26ee]" started-at="2025-08-16T17:03:51 IST" name="testProduct" finished-at="2025-08-16T17:03:59 IST" duration-ms="7760" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testProduct -->
+        <test-method is-config="true" signature="logoutApplication()[pri:0, instance:VtigerPackage001.CreateProduct@52af26ee]" started-at="2025-08-16T17:03:59 IST" name="logoutApplication" finished-at="2025-08-16T17:04:04 IST" duration-ms="5197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutApplication -->
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:VtigerPackage001.CreateProduct@52af26ee]" started-at="2025-08-16T17:04:04 IST" name="closeApplication" finished-at="2025-08-16T17:04:04 IST" duration-ms="569" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApplication -->
       </class> <!-- VtigerPackage001.CreateProduct -->
       <class name="VtigerPackage001.CreateDocuments">
-        <test-method is-config="true" signature="connectToDB()[pri:0, instance:VtigerPackage001.CreateDocuments@21e360a]" started-at="2025-08-16T13:32:00 IST" name="connectToDB" finished-at="2025-08-16T13:32:00 IST" duration-ms="10" status="PASS">
+        <test-method is-config="true" signature="connectToDB()[pri:0, instance:VtigerPackage001.CreateDocuments@25fb8912]" started-at="2025-08-16T17:03:17 IST" name="connectToDB" finished-at="2025-08-16T17:03:17 IST" duration-ms="16" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- connectToDB -->
-        <test-method is-config="true" signature="closeTheDB()[pri:0, instance:VtigerPackage001.CreateDocuments@21e360a]" started-at="2025-08-16T13:32:12 IST" name="closeTheDB" finished-at="2025-08-16T13:32:12 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:VtigerPackage001.CreateDocuments@25fb8912]" started-at="2025-08-16T17:03:18 IST" name="launchApplication" finished-at="2025-08-16T17:03:20 IST" duration-ms="2581" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method is-config="true" signature="loginApplication()[pri:0, instance:VtigerPackage001.CreateDocuments@25fb8912]" started-at="2025-08-16T17:03:20 IST" name="loginApplication" finished-at="2025-08-16T17:03:21 IST" duration-ms="340" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginApplication -->
+        <test-method signature="testDocument()[pri:0, instance:VtigerPackage001.CreateDocuments@25fb8912]" started-at="2025-08-16T17:03:21 IST" name="testDocument" finished-at="2025-08-16T17:03:29 IST" duration-ms="8186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDocument -->
+        <test-method is-config="true" signature="logoutApplication()[pri:0, instance:VtigerPackage001.CreateDocuments@25fb8912]" started-at="2025-08-16T17:03:29 IST" name="logoutApplication" finished-at="2025-08-16T17:03:34 IST" duration-ms="5257" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutApplication -->
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:VtigerPackage001.CreateDocuments@25fb8912]" started-at="2025-08-16T17:03:34 IST" name="closeApplication" finished-at="2025-08-16T17:03:35 IST" duration-ms="585" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+        <test-method is-config="true" signature="closeTheDB()[pri:0, instance:VtigerPackage001.CreateDocuments@25fb8912]" started-at="2025-08-16T17:04:21 IST" name="closeTheDB" finished-at="2025-08-16T17:04:21 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeTheDB -->
       </class> <!-- VtigerPackage001.CreateDocuments -->
+      <class name="VtigerPackage001.Create_DashBoard">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:VtigerPackage001.Create_DashBoard@306e95ec]" started-at="2025-08-16T17:03:35 IST" name="launchApplication" finished-at="2025-08-16T17:03:36 IST" duration-ms="1807" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method is-config="true" signature="loginApplication()[pri:0, instance:VtigerPackage001.Create_DashBoard@306e95ec]" started-at="2025-08-16T17:03:36 IST" name="loginApplication" finished-at="2025-08-16T17:03:37 IST" duration-ms="335" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginApplication -->
+        <test-method signature="dashboardTest()[pri:0, instance:VtigerPackage001.Create_DashBoard@306e95ec]" started-at="2025-08-16T17:03:37 IST" name="dashboardTest" finished-at="2025-08-16T17:03:43 IST" duration-ms="6149" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dashboardTest -->
+        <test-method is-config="true" signature="logoutApplication()[pri:0, instance:VtigerPackage001.Create_DashBoard@306e95ec]" started-at="2025-08-16T17:03:43 IST" name="logoutApplication" finished-at="2025-08-16T17:03:48 IST" duration-ms="5201" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutApplication -->
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:VtigerPackage001.Create_DashBoard@306e95ec]" started-at="2025-08-16T17:03:48 IST" name="closeApplication" finished-at="2025-08-16T17:03:49 IST" duration-ms="537" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+      </class> <!-- VtigerPackage001.Create_DashBoard -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
