@@ -20,7 +20,7 @@ public class CreateOrgnization extends BaseClass {
 	  
 		System.out.println("Sameer pathan: Great english speaker");
 		
-		System.out.println("Sameer jamee pathan");
+		System.out.println("Sameer jameer pathan");
 	}
    
 }
