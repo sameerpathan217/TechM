@@ -20,9 +20,16 @@ public class CreateProduct extends BaseClass {
 		System.out.println("Sameer pathan: $1000cr owner");
 
 		System.out.println("Sameer pathan:Unstoppable SDET Engineer");
+<<<<<<< Updated upstream
 		System.out.println("===>Sameer Khan Pathan<===");	
 		
 		
+=======
+		System.out.println("===>Sameer khan pathan<===");	
+		System.out.println("===>Sameer khan pathan<===1234");
+		System.out.println("===>Pathan khan sameer<===");
+		System.out.println("123456789===>Pathan khan sameer<===1234567789");
+>>>>>>> Stashed changes
 		
 	}
 
