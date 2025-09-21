@@ -20,14 +20,7 @@ public class CreateProduct extends BaseClass {
 		System.out.println("Sameer pathan: $1000cr owner");
 
 		System.out.println("Sameer pathan:Unstoppable SDET Engineer");
-		System.out.println("===>Sameer khan pathan<===");
-		System.out.println("<====Pathan khan sameer===>");
-		System.out.println("<====Pathan khan sameer===>");
-		System.out.println("<====Pathan khan sameer===>");
-
-
-		
-		
+		System.out.println("===>Sameer khan pathan<===");	
 		
 	}
 
