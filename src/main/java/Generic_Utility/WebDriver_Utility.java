@@ -32,7 +32,7 @@ public class WebDriver_Utility {
 	
 	public void mouseAction(WebDriver driver,WebElement ele) {
 		Actions ac=new Actions(driver);
-		ac.moveToElement(ele);
+		ac.moveToElement(ele).perform();
 	}
 	
 	public void acceptAlert(WebDriver driver) {
