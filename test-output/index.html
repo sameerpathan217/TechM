@@ -51,12 +51,12 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>D:\Training\TestAutomation\vTiger\testngExtentReport.xml</span>
+                    <span>D:\Training\TestAutomation\vTiger\TechM\ParrallelExecution.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-Suite" class="navigator-link ">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">4 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -197,24 +197,33 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\Training\TestAutomation\vTiger\testngExtentReport.xml</span>
+            <span class="header-content">D:\Training\TestAutomation\vTiger\TechM\ParrallelExecution.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;listeners&gt;
-    &lt;listener class-name=&quot;Generic_Utility.vTiger_Extent_Report&quot;/&gt;
-  &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+&lt;suite thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;VtigerPackage001.CreateDocuments&quot;/&gt;
-      &lt;class name=&quot;VtigerPackage001.Create_DashBoard&quot;/&gt;
-      &lt;class name=&quot;VtigerPackage001.CreateProduct&quot;/&gt;
-      &lt;class name=&quot;VtigerPackage001.CreateOrgnization&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;Test2&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;VtigerPackage001.CreateProduct&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test2 --&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;Test3&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;VtigerPackage001.CreateOrgnization&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test3 --&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;Test4&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;VtigerPackage001.Create_DashBoard&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test4 --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -226,7 +235,16 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (4 classes)</span>
+                <span class="test-name">Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test2 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test3 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test4 (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -276,24 +294,24 @@ data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'logintoApp')
 data.setCell(0, 2, 'VtigerPackage001.CreateOrgnization')
-data.setCell(0, 3, 6521);
+data.setCell(0, 3, 33553);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testDocument')
-data.setCell(1, 2, 'VtigerPackage001.CreateDocuments')
-data.setCell(1, 3, 6327);
+data.setCell(1, 1, 'testProduct')
+data.setCell(1, 2, 'VtigerPackage001.CreateProduct')
+data.setCell(1, 3, 33202);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testProduct')
-data.setCell(2, 2, 'VtigerPackage001.CreateProduct')
-data.setCell(2, 3, 5314);
+data.setCell(2, 1, 'testDocument')
+data.setCell(2, 2, 'VtigerPackage001.CreateDocuments')
+data.setCell(2, 3, 27857);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'dashboardTest')
 data.setCell(3, 2, 'VtigerPackage001.Create_DashBoard')
-data.setCell(3, 3, 4221);
+data.setCell(3, 3, 6825);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 22 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -308,36 +326,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">6 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">VtigerPackage001.Create_DashBoard</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">connectToDB</span>
-                <br/>
-                <span class="ignored-method-name">closeTheDB</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">VtigerPackage001.CreateProduct</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">connectToDB</span>
-                <br/>
-                <span class="ignored-method-name">closeTheDB</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">VtigerPackage001.CreateOrgnization</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">connectToDB</span>
-                <br/>
-                <span class="ignored-method-name">closeTheDB</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -346,106 +337,145 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">VtigerPackage001.CreateDocuments</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">VtigerPackage001.Create_DashBoard</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">connectToDB</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">VtigerPackage001.CreateDocuments</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">launchApplication</span>
-                <span class="method-start">299 ms</span>
+                <span class="method-start">43 ms</span>
               </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">VtigerPackage001.CreateProduct</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">43 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">VtigerPackage001.CreateOrgnization</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">43 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">VtigerPackage001.CreateDocuments</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">loginApplication</span>
-                <span class="method-start">2799 ms</span>
+                <span class="method-start">65964 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">VtigerPackage001.CreateProduct</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">loginApplication</span>
+                <span class="method-start">65964 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">VtigerPackage001.CreateOrgnization</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">loginApplication</span>
+                <span class="method-start">65964 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testDocument</span>
-                <span class="method-start">3071 ms</span>
+                <span class="method-name">logintoApp</span>
+                <span class="method-start">66893 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">VtigerPackage001.CreateProduct</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testProduct</span>
+                <span class="method-start">66928 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">VtigerPackage001.CreateDocuments</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testDocument</span>
+                <span class="method-start">83836 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">VtigerPackage001.CreateProduct</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">logoutApplication</span>
-                <span class="method-start">9405 ms</span>
+                <span class="method-start">100133 ms</span>
               </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">VtigerPackage001.CreateOrgnization</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">logoutApplication</span>
+                <span class="method-start">100447 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">VtigerPackage001.CreateProduct</div> <!-- chronological-class-name -->
               <div class="configuration-class after">
                 <span class="method-name">closeApplication</span>
-                <span class="method-start">14132 ms</span>
+                <span class="method-start">106062 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">VtigerPackage001.Create_DashBoard</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">launchApplication</span>
-                <span class="method-start">14454 ms</span>
+                <span class="method-start">106541 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">loginApplication</span>
-                <span class="method-start">15783 ms</span>
+                <span class="method-start">108516 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">dashboardTest</span>
-                <span class="method-start">15991 ms</span>
+                <span class="method-start">108795 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">logoutApplication</span>
-                <span class="method-start">20214 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-class after">
-                <span class="method-name">closeApplication</span>
-                <span class="method-start">24972 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">VtigerPackage001.CreateProduct</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">launchApplication</span>
-                <span class="method-start">25306 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-method before">
-                <span class="method-name">loginApplication</span>
-                <span class="method-start">26613 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">testProduct</span>
-                <span class="method-start">26835 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">logoutApplication</span>
-                <span class="method-start">32150 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-class after">
-                <span class="method-name">closeApplication</span>
-                <span class="method-start">36899 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">VtigerPackage001.CreateOrgnization</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">launchApplication</span>
-                <span class="method-start">37218 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-method before">
-                <span class="method-name">loginApplication</span>
-                <span class="method-start">38577 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">logintoApp</span>
-                <span class="method-start">38782 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">logoutApplication</span>
-                <span class="method-start">45304 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-class after">
-                <span class="method-name">closeApplication</span>
-                <span class="method-start">50271 ms</span>
-              </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">VtigerPackage001.CreateDocuments</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">logoutApplication</span>
+                <span class="method-start">111694 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">VtigerPackage001.CreateOrgnization</div> <!-- chronological-class-name -->
+              <div class="configuration-class after">
+                <span class="method-name">closeApplication</span>
+                <span class="method-start">115415 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">VtigerPackage001.Create_DashBoard</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">logoutApplication</span>
+                <span class="method-start">115622 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">VtigerPackage001.CreateDocuments</div> <!-- chronological-class-name -->
+              <div class="configuration-class after">
+                <span class="method-name">closeApplication</span>
+                <span class="method-start">116643 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">VtigerPackage001.Create_DashBoard</div> <!-- chronological-class-name -->
+              <div class="configuration-class after">
+                <span class="method-name">closeApplication</span>
+                <span class="method-start">120764 ms</span>
+              </div> <!-- configuration-class after -->
               <div class="configuration-suite after">
                 <span class="method-name">closeTheDB</span>
-                <span class="method-start">50843 ms</span>
+                <span class="method-start">121335 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
